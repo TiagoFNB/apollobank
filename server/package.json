@@ -10,7 +10,6 @@
 		"@types/graphql": "^14.5.0",
 		"@types/jsonwebtoken": "^8.3.8",
 		"@types/node": "^13.7.7",
-		"minimist": "^1.2.5",
 		"nodemon": "^2.0.14",
 		"ts-node": "8.6.2",
 		"typescript": "3.8.3"
@@ -38,8 +37,5 @@
 		"dev": "nodemon --exec ts-node src/index.ts",
 		"build": "tsc",
 		"preinstall": "npx npm-force-resolutions"
-	},
-	"resolutions": {
-		"minimist": "^1.2.5"
 	}
 }

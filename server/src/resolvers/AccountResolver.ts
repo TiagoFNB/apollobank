@@ -42,7 +42,7 @@ export class AccountResolver {
 		const owner: User | undefined = await User.findOne({ where: { id: payload.userId } });
 
 		if (owner) {
-			return Account.find({ where: { owner: owner } });
+			return Account.find({ where: { owner: owner }, relations:["transactions"] });
 		}
 
 		return null;

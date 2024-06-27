@@ -36,6 +36,7 @@ export class Account extends BaseEntity {
 	@Column({ default: 1000 })
 	balance: number;
 
+	@Field((type) => [Transaction],{nullable:true})
 	@OneToMany(() => Transaction, (transaction) => transaction.account, { onDelete: "CASCADE" })
 	transactions: Transaction[];
 }
