@@ -1,3 +1,4 @@
+(this repository was created in an academic context for my dissertation project)
 # apollobank 🚀
 
 A fullstack GraphQL banking application built using React, Node & TypeScript.
@@ -11,9 +12,11 @@ Now it is fully open source. Check the contribution guide [here](CONTRIBUTING.md
 - Node.js
 - PostgreSQL 13
   - create database name "apollobank"
+- Neo4j Desktop (if using server-graph)
+  - create database name "apollobank"
 - Git clone
 ```bash
-git clone https://github.com/edwardcdev/apollobank.git
+git clone https://github.com/TiagoFNB/apollobank.git
 cd apollobank
 ```
 
@@ -24,7 +27,8 @@ npm install
 npm start
 ```
 - check ormconfig.json file to check or update database connection info.
-
+- create .env file with necessary values
+- 
 ### Run frontend
 ```bash
 cd client
@@ -68,6 +72,19 @@ npm start
 - TypeORM
 - TypeScript
 - PostgreSQL
+  
+### Server side (Graph)
+
+- Apollo Server
+- bcryptjs
+- cors
+- Express
+- GraphQL
+- faker
+- jsonwebtoken
+- Neo4jGraphQL
+- TypeScript
+- Neo4j
 
 ### Client side
 
@@ -85,3 +102,22 @@ npm start
 - [ ] Update the chart on the dashboard to show spending such that the y axis is the users account balance.
 - [ ] Sort transactions by date & sort chart data by date.
 - [ ] Fetch exchange rates from an API.
+
+
+# Documentation
+
+## Domain diagram
+
+![domain](diagrams/Domain.svg)
+
+## High level sequence diagram of how Neo4jGraphQL operates
+
+![neo4jgraphql](diagrams/SD_Neo4jGraphQL.svg)
+
+## High level sequence diagram of account creation on initial backend with relational database (server)
+
+![domain](diagrams/SD_RELATIONAL.svg)
+
+## High level sequence diagram of account creation on new backend with graph database (server-graph)
+
+![domain](diagrams/SD_GRAPH.svg)
