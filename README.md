@@ -1,4 +1,4 @@
-(this repository was created in an academic context for my dissertation project)
+(this repository was created in an academic context for my dissertation project, which can be read [here](document/DM_TiagoBarbosa_2024_MEI.pdf).)
 # apollobank 🚀
 
 A fullstack GraphQL banking application built using React, Node & TypeScript.
